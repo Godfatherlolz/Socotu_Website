@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .parag{
+            text-align: justify;text-justify: inter-word;text-indent: 30px;
+        }
+        ul > li  {
+            text-align: left;
+            font-size:16px;
+            color:#999;
+        }
+    </style>
+    <div id="page-banner" class="page-banner services-banner container-fluid no-padding">
+        <div class="banner-content">
+            <h3>Agence Maritime</h3>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('home') }}">Acceuil</a></li>
+                <li><a href="{{ path('services') }}">Services</a></li>
+                <li><a href="{{ path('agence_maritime') }}">Agences Maritimes</a></li>
+            </ol>
+        </div>
+    </div><!-- Banner Section /- -->
+    <div class="services container-fluid no-padding">
+        <!-- Container -->
+        <div class="section-padding"></div>
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header-1" style="padding-bottom: 150px;">
+                <h3>Agences Maritimess</h3>
+                <p class="parag">
+                    L'agence maritime de Tunis est certifiée ISO 9001 depuis juillet 2003 pour la consignation des navires, l'assistance portuaire aux navires et marchandises à l'import-export et l'organisation du transport toutes destinations.                </p>
+                <div class="col-md-6">
+                   <p class="parag">
+                       Avec un portefeuille diversifié de représentations de courtiers en transport maritime, d'armateurs de lignes régulières et de tramping et de réseaux internationaux de NVOCC assurant une grande diversité de lignes et services couvrant le monde entier, la SOCOTU offre à ses clients des taux de fret préférentiels et compétitifs de toutes les provenances et sur toutes les destinations en conventionnel, en conteneurs ou en RO – RO, du plus petit colis jusqu'aux importantes cargaisons homogènes.
+                   </p>
+                    <br>
+                    <p class="parag">
+                        La recherche permanente des nouvelles techniques et des meilleures solutions de transport (les itinéraires et délais les plus courts au moindre coût), l’information continue, la disponibilité et la technicité du personnel de la SOCOTU, de ses partenaires et correspondants sont les garants de la satisfaction de vos besoins les plus exigeants en services de transport maritime de haute qualité.                </p>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <img style="padding-bottom:10px;" src="{{ asset('images/slider3.jpg') }}" alt="slider-1"/>
+                </div>
+
+
+
+
+            </div><!-- Section Header -->
+
+        </div><!-- Services /- -->
+    </div><!-- Services /- -->
+{% endblock %}

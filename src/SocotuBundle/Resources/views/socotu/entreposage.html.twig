@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .parag{
+            text-align: justify;text-justify: inter-word;text-indent: 30px;
+        }
+        ul > li  {
+            text-align: left;
+            font-size:16px;
+            color:#999;
+        }
+    </style>
+    <div id="page-banner" class="page-banner services-banner container-fluid no-padding">
+        <div class="banner-content">
+            <h3>Entreposage</h3>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('home') }}">Acceuil</a></li>
+                <li><a href="{{ path('services') }}">Services</a></li>
+                <li><a href="{{ path('entreposage') }}">Entreposage & Distribution</a></li>
+            </ol>
+        </div>
+    </div><!-- Banner Section /- -->
+    <div class="services container-fluid no-padding">
+        <!-- Container -->
+        <div class="section-padding"></div>
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header-1" style="padding-bottom: 150px;">
+                <h3>Entreposage</h3>
+               <div class="col-md-6">
+                    <p class="parag">
+                        Avec ses différents départements techniques, ses capacités d'entreposage dans les principales zones portuaires du pays (Tunis – Radès – Sousse et Sfax), l'importante flotte de moyens de transport et de manutention, le réseau de ses agences en Tunisie et les moyens et infrastructures de ses correspondants à l'étranger, la SOCOTU assure un service « Porte à Porte » de n'importe quel point du monde jusqu'à rendu domicile du client avec la rapidité requise des enlèvements et des livraisons. Le client a un seul interlocuteur qui le tient informé à toutes les étapes du déroulement du transport. Ces capacités sont aussi l'extension et le complément en Tunisie de la chaîne logistique des correspondants de la SOCOTU qui disposent d'un outil efficace au service de leur clientèle.                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <img style="padding-bottom:10px;" src="{{ asset('images/slider3.jpg') }}" alt="slider-1"/>
+                </div>
+
+
+
+
+            </div><!-- Section Header -->
+
+        </div><!-- Services /- -->
+        <div class="section-padding"></div>
+
+    </div><!-- Services /- -->
+{% endblock %}

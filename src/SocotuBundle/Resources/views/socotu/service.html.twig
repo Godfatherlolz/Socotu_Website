@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .parag{
+            text-align: justify;text-justify: inter-word;text-indent: 30px;
+        }
+    </style>
+    <div id="page-banner" class="page-banner services-banner container-fluid no-padding">
+        <div class="banner-content">
+            <h3>Our Services</h3>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('home') }}">Acceuil</a></li>
+                <li><a href="#">Nos Services</a></li>
+            </ol>
+        </div>
+    </div><!-- Banner Section /- -->
+
+    <!-- Services -->
+    <div class="services container-fluid no-padding">
+        <!-- Container -->
+        <div class="section-padding"></div>
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header-1">
+                <h3>Les Services que Nous Offrons</h3>
+                <p class="parag">
+                    Pour préserver son leadership dans la logistique du transport en Tunisie, la SOCOTU veille toujours à assurer son haut niveau de performance par les investissements nécessaires et ciblés pour le renforcement de ses structures (bureaux & agences) ,ses infrastructures (entrepôts et terminaux de conteneurs et semi-remorques ), ses moyens (flotte de voitures, camions, tracteurs et engins ) et par la consolidation des ressources humaines ( formation continue et recyclage ) ainsi que par l’analyse, l’adaptation et l’amélioration continues des procédures et des techniques de traitement des opérations .
+                </p>
+                <br>
+                <p class="parag">
+                    La SOCOTU offre à ses partenaires et clients une gamme de services intégrés à haute valeur ajoutée à coûts compétitifs et délais réduits avec une organisation décentralisée par des implantations de proximité bien ancrées dans toutes les régions agricoles, commerciales et industrielles et aussi dans tous les ports et aéroports du pays. La SOCOTU dispose aussi d’un réseau mondial de partenaires et correspondants de réputation confirmée.
+                </p>
+                <br>
+                <p class="parag">
+                    Avec une expérience riche et diversifiée acquise durant plus d’un siècle d’existence, la SOCOTU a toujours su et pu fournir des solutions logistiques adaptées aux besoins et exigences de sa clientèle et du marché national et international dans les domaines des transports maritime, aérien et routier ainsi que toute autre activité connexe :
+                </p>
+            </div><!-- Section Header -->
+            <div class="services-box services-box-1">
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="images/services-image/service-1.jpg" alt="services" />
+                        <h3>Transport</h3>
+<p>
+    La SOCOTU accorde un intérêt particulier au développement de cette activité par le volume des investissements pour le renforcement et le renouvellement...
+</p>
+                        <a href="#">Learn More<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="images/services-image/service-3.jpg" alt="services" />
+                        <h3>Transit</h3>
+<p>
+    Grâce à ses équipes de techniciens chevronnés en législation fiscale, réglementations douanières et logistiques de manutention et transport, la SOCOTU...
+</p>
+                        <a href="#">Learn More<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="images/services-image/service-3.jpg" alt="services" />
+                        <h3>Agence Maritime</h3>
+<p>
+    L'agence maritime de Tunis est certifiée ISO 9001 depuis juillet 2003 pour la consignation des navires, l'assistance portuaire aux navires et marchandises...
+</p>
+                        <a href="#">Learn More<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="images/services-image/service-3.jpg" alt="services" />
+                        <h3>Entreposage & Distribution</h3>
+                            <p>
+                                Avec ses différents départements techniques, ses capacités d'entreposage dans les principales zones portuaires du pays (Tunis – Radès
+                            </p>
+                        <a href="#">Learn More<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- Container /- -->
+    </div><!-- Services /- -->
+
+{% endblock %}

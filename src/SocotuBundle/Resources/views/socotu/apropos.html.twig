@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .parag{
+            text-align: justify;text-justify: inter-word;text-indent: 30px;
+        }
+        ul > li  {
+            text-align: left;
+            font-size:16px;
+            color:#999;
+        }
+    </style>
+    <div id="page-banner" class="page-banner services-banner container-fluid no-padding">
+        <div class="banner-content">
+            <h3>A propos de la SOCOTU</h3>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('home') }}">Acceuil</a></li>
+                <li><a href="{{ path('apropos') }}">A Propos</a></li>
+            </ol>
+        </div>
+    </div><!-- Banner Section /- -->
+    <div class="offer container-fluid no-padding">
+        <div class="section-padding"></div>
+        <!-- Container -->
+        <div class="container">
+
+            <div class="row">
+                <!-- Col-md-8 -->
+                <div class="col-md-8 col-sm-6">
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <h3>Historique</h3>
+                        <p class="parag">
+                            La SOCOTU a été créée en 1900 pour s'exercer dans le transit, le transport international de marchandise et ses activités connexes. Grâce à plus de 100 ans d'expériences, le personnel de la SOCOTU a développé une grande expertise dans le secteur du transport et une grande connaissance du marché national et international.  Durant ses années, la SOCOTU a forgé de forte relations avec les importateurs, les exportateurs et les opérateurs du transport international en Tunisie, en méditerranée, dans les pays européens et partout dans le monde.
+                        </p>
+                    </div><!-- Section Header -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="offers-content">
+                                <h3>1900 - Début de l’aventure SOCOTU </h3>
+                                    <p>
+                                        Création de la société commerciale Tunisienne :  L’activité de la SOCOTU commence avec le dédouanement de marchandises et l’exportation du charbon minérale.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="offers-content">
+                                <h3>1959 – Création de la CTN et de la STAM </h3>
+                                <p>
+                                    La SOCOTU donne naissance à deux grande sociétés : La << Compagnie Tunisienne de navigation >> - CTN (l’armateur national) et la << société Tunisienne d’acconnage et de manutention >> - STAM.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="offers-content">
+                                <h3>1961 – Nationalisation de la SOCOTU</h3>
+                                <p>
+                                    En février 1961, la SOCOTU est nationalisée ; la COTUNAV en tant que société nationale devient l’actionnaire principal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="offers-content">
+                                <h3>1996 – Privatisation de la SOCOTU</h3>
+                                <p>
+                                    En mars 1996, la SOCOTU devient une entreprise privée ; l’actionnaire principal est M. LAHMAR SLAHEDDINE.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Col-md-8 /- -->
+                <!-- Col-md-4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="mission-content">
+                        <!-- Section Header -->
+                        <div class="section-header">
+                            <h3>Certifications et agréments</h3>
+                            <p class="parag" style="text-indent: 0px;">
+                                La SOCOTU s’est engagé depuis toujours à se conformer aux exigences et réglementations en vigueur. C’est pourquoi ; elle a veillé à avoir tous les agréments nécessaires à l’exercice des métiers et services qu’elle propose à ses clients.
+                            </p>
+                        </div><!-- Section Header -->
+                        <ul>
+                            <li>
+                             Commissionnaire en Douane
+                            </li>
+                            <li>
+                                Transitaire
+                            </li>
+                            <li>
+                                Agent maritime  en Douane
+                            </li>
+                            <li>
+                                Transporteur TIR
+                            </li>
+                            <li>
+                                Agent IATA
+                            </li>
+                            <li>
+                                Commissaire d’avarie
+                            </li>
+                        </ul>
+                        <p class="parag" style="text-indent: 0px;">
+                            La SOCOTU s’est engagé fermement à installer le Système de Management de la Qualité (SMQ).
+
+                            L’agence maritime de Tunis est certifiée ISO9001 depuis Juillet 2003 pour la consignation des navires ; l’assistance portuaire aux navires et marchandises à l’import –export et l’organisation du transport toutes destinations.
+
+                        </p>
+                    </div>
+                </div><!-- Col-md-4 /- -->
+            </div>
+        </div><!-- Container / -->
+        <div class="section-padding"></div>
+    </div>
+    <!-- Offer / -->{% endblock %}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}SOCOTU {% endblock %}</title>
+
+
+    <!-- Standard Favicon -->
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />
+
+    <!-- For iPhone 4 Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('images/apple-touch-icon-114x114-precomposed.png') }}">
+
+    <!-- For iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('images/apple-touch-icon-72x72-precomposed.png') }}">
+
+    <!-- For iPhone: -->
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('images/apple-touch-icon-57x57-precomposed.png') }}">
+
+    {% block stylesheets %}
+    <!-- Library - Loader CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('libraries/loader/loaders.min.css') }}">
+
+    <!-- Library - Google Font Familys -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,600,300,200,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- Library - Bootstrap v3.3.5 -->
+
+    <link href="{{ asset('libraries/bootstrap/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Font Icons -->
+    <link href="{{ asset('libraries/fonts/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <link href="{{ asset('libraries/fonts/elegant-icons.css') }}" rel="stylesheet" type="text/css" />
+
+
+    <!-- Library - OWL Carousel V.2.0 beta -->
+    <link href="{{ asset('libraries/owl-carousel/owl.carousel.css') }}" rel="stylesheet" type="text/css" />
+
+    <link href="{{ asset('libraries/owl-carousel/owl.theme.css') }}" rel="stylesheet" type="text/css" />
+
+
+    <!-- Library - FlexSlider v2.5.0 -->
+    <link href="{{ asset('libraries/flexslider/flexslider.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Library - Animate CSS -->
+    <link href="{{ asset('libraries/animate/animate.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Custom - Common CSS -->
+    <link href="{{ asset('css/plugins.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/navigation-menu.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Custom - Theme CSS -->
+    <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/shortcodes.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5/respond.min.js"></script>
+
+    <![endif]-->
+    <style>
+        .menuul {
+            padding-bottom: 3px!important;
+            padding-top: 3px!important;
+        }
+        .menuul2 {
+            padding-bottom: 5px!important;
+        }
+        .menu-block{
+            top:10px!important;
+        }
+    </style>
+    {% endblock %}
+    {% block pagestyle %}
+    {% endblock %}
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+<!-- LOADER -->
+<div id="site-loader" class="load-complete">
+    <div class="loader">
+        <div class="loader-inner ball-clip-rotate">
+            <div></div>
+        </div>
+    </div>
+</div><!-- Loader /- -->
+
+<a id="top"></a>
+<!-- Header -->
+<header class="header-main">
+    <!-- Top Header -->
+    <div class="top-header container-fluid no-padding">
+        <!-- Container -->
+        <div class="container ">
+            <ul>
+
+                <li class="menuul"><img src="{{ asset('images/icon/phone-ic.png') }}" alt="Phone Icon" /> (216) 71 448 312</li>
+                <li class="menuul"><img src="{{ asset('images/icon/mail-ic.png') }}" alt="Mail Icon" /><a href="mailto:info@example.com"> info@socotu.com.tn</a></li>
+                <li class="menuul"><img src="{{ asset('images/icon/watch-ic.png') }}" alt="Watch Icon" /> Lun - Sam : 9 - 18</li>
+            </ul>
+            <div class="language-bar pull-right">
+
+                <a href="#" class="menuul"><img src="{{ asset('images/icon/share-ic.png') }}" alt="Share" /></a>
+            </div>
+        </div>
+        <!-- container /- -->
+    </div><!-- Top Header /- -->
+</header>
+
+<!-- Menu Block -->
+<nav class="menu-block">
+    <div class="container">
+        <div class="navbar ow-navigation" style="background-color:white;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="menuul2 navbar-brand" href="#"><img src="{{ asset('images/logo.jpg') }}" alt="Logo" style="height: 40px"; /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" style="background-color: white;">
+                <ul class="nav navbar-nav">
+                    <li class=" active"><a href="index.html menuul2" title="Home">Accueil</a></li>
+                    <li><a href="{{ path('apropos') }}" title="About">A propos</a></li>
+                    <li><a href="about.html" title="About">Flotte</a></li>
+                    <li class="dropdown">
+                        <a href="{{ path('services') }}" title="Fleet" class="dropdown-toggle menuul2" role="button" aria-haspopup="true" aria-expanded="false"> Services</a>
+                        <i class="ddl-switch fa fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('transit') }}">Transit</a></li>
+                            <li><a href="{{ path('agence_maritime') }}">Agences Martimes</a></li>
+                            <li><a href="{{ path('entreposage') }}">Entreposage</a></li>
+                            <li><a href="{{ path('transport') }}">Transport</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" title="About">Actualites</a></li>
+
+                    <li class="dropdown">
+                        <a href="fleet.html" title="Fleet" class="dropdown-toggle menuul2" role="button" aria-haspopup="true" aria-expanded="false">Agences</a>
+                        <i class="ddl-switch fa fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="fleet.html">Agences</a></li>
+                            <li><a href="fleet-grid.html">Fleet Grid</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact-us.html" title="Contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav><!-- Menu Block /- -->
+{% block body %}
+{% endblock %}
+
+<!-- Footer Main -->
+<footer class="footer-main">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="detail-box">
+                    <i><img src="{{ asset('images/footer-logo.png') }}" alt="Footer Logo" /></i>
+                    <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quasoa molestias excepturi sintal  occaecati cupiditate non provident similique sunt.</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <aside class="widget widget-links">
+                    <h3 class="widget-title">Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="{{ path('services') }}">Nos Services</a></li>
+                        <li><a href="#">Nos Agences</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <aside class="widget widget-services">
+                    <h3 class="widget-title">SERVICEs FOURNIs</h3>
+                    <ul>
+                        <li><a href="{{ path('transport') }}">Transport</a></li>
+                        <li><a href="{{ path('agence_maritime') }}">Agence Maritime</a></li>
+                        <li><a href="{{ path('transit') }}">Transit</a></li>
+                        <li><a href="{{ path('entreposage') }}">Entreposage</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <aside class="widget widget-contacts">
+                    <h3 class="widget-title">Contact Info</h3>
+                    <ul>
+
+                        <li><img src="{{ asset('images/icon/address-ic.png') }}" alt="Address" /> Adresse : Zone Portuaire de Radès - 2040 Radès</li>
+                        <li><img src="{{ asset('images/icon/phone-ic.png') }}" alt="Phone" /> Phone : (216) 71 448 312 </li>
+                        <li><img src="{{ asset('images/icon/mail-ic.png') }}" alt="Mail" /><a href="mailto:info@example.com"> Email : info@socotu.com.tn</a></li>
+                        <li><img src="{{ asset('images/icon/fax-ic.png') }}" alt="Fax" />Fax : (216) 71 448 159</li>
+                        <li><img src="{{ asset('images/icon/watch-ic.png') }}" alt="Watch" />Horaire : Lun - Sam 9 - 18 </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div><!-- Container /- -->
+    <div class="bottom-footer container-fluid no-padding">
+        <p class="copyright">&copy; 2016 Express Logitics. All Rights Reserved.</p>
+    </div>
+</footer><!-- Footer Main -->
+{% block javascripts %}
+    <!-- JQuery v1.11.3 -->
+    <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
+
+    <!-- Library - Modernizer -->
+    <script src="{{ asset('libraries/modernizr/modernizr.js') }}" type="text/javascript"></script>
+
+    <!-- Library - Bootstrap v3.3.5 -->
+    <script src="{{ asset('libraries/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+    <!-- Bootstrap JS File v3.3.5 -->
+
+    <!-- jQuery Easing v1.3 -->
+    <script src="{{ asset('js/jquery.easing.min.js') }}" type="text/javascript"></script>
+
+    <!-- Library - jQuery.appear -->
+    <script src="{{ asset('libraries/appear/jquery.appear.js') }}" type="text/javascript"></script>
+
+    <!-- Library - OWL Carousel V.2.0 beta -->
+    <script src="{{ asset('libraries/owl-carousel/owl.carousel.min.js') }}" type="text/javascript"></script>
+
+    <!-- Library - FlexSlider v2.5.0 -->
+    <script src="{{ asset('libraries/flexslider/jquery.flexslider.js') }}" type="text/javascript"></script>
+
+    <!-- Library - Magnific Popup - v1.0.0 -->
+    <script src="{{ asset('libraries/magnific-popup/jquery.magnific-popup.min.js') }}" type="text/javascript"></script>
+
+    <!-- Library - Theme JS -->
+    <script src="{{ asset('js/functions.js') }}" type="text/javascript"></script>
+
+{% endblock %}
+{% block js %}{% endblock %}
+</body>
+</html>

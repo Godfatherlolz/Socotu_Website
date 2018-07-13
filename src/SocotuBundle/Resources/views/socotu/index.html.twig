@@ -1,0 +1,291 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Photo Slider -->
+    <div id="photo-slider" class="photo-slider container-fluid no-padding">
+        <!-- Main Carousel -->
+        <div id="main-carousel" class="carousel slide carousel-fade col-offset-2" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="{{ asset('images/slider3.jpg') }}" alt="slider-1"/>
+
+                </div>
+                <div class="item">
+                    <img src="{{ asset('images/slider.jpg') }}" alt="slider-2"/>
+
+                </div>
+                <div class="item">
+                    <img src="{{ asset('images/slider2.jpg') }}" alt="slider-3"/>
+
+                </div>
+            </div>
+            <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Précédant</span>
+            </a>
+            <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div><!-- Main Carousel /-  -->
+    </div><!-- Photo Slider /- -->
+
+    <!-- Services -->
+    <div class="services container-fluid no-padding">
+        <!-- Container -->
+        <div class="container">
+            <div class="services-box">
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="{{ asset('images/1.jpg') }}" alt="services">
+                        <h3>Commissariat d'Avaries </h3>
+                            <p>
+                                Le Service Commissariat d'Avaries avec des experts compétents dans les constats et expertises et qui sont sollicités par les clients...
+                            </p>
+                        <a href="#">Lire Olus<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="{{ asset('images/2.jpg') }}" alt="services">
+                        <h3>Agence Maritime</h3>
+                            <p>
+                                L'agence maritime de Tunis est certifiée ISO 9001 depuis juillet 2003 pour la consignation des navires, l'assistance portuaire aux navires...
+                            </p>
+                        <a href="#">Lire Plus<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="{{ asset('images/services-image/service-3.jpg') }}" alt="services">
+                        <h3>Transit</h3>
+                        <p>Le Service Transit des Primeurs spécialisé dans le dédouanement et l'organisation du transport des produits agroalimentaires, fruits, légumes...
+                        </p>
+                        <a href="#">Lire Plus<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="{{ asset('images/services-image/service-3.jpg') }}" alt="services">
+                        <h3>Entreposage</h3>
+                        <p>
+                            Avec ses différents départements techniques, ses capacités d'entreposage dans les principales zones portuaires du pays (Tunis – Radès ...</p>
+                        <a href="#">Lire Plus<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="services-content">
+                        <img src="{{ asset('images/services-image/service-3.jpg') }}" alt="services">
+                        <h3>Fret aérien</h3>
+                        <p>
+                            Le Service Fret Aérien pour les expéditions par avion à l'import et à l'export avec une présence dans tous les aéroports de commerce ...
+                        </p>
+                        <a href="#">Lire Plus<i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Container /- -->
+    </div><!-- Services /- -->
+
+    <!-- Offer -->
+    <div class="offer container-fluid no-padding">
+        <div class="section-padding"></div>
+        <!-- Container -->
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h3>SOCOTU</h3>
+            </div><!-- Section Header -->
+            <div  style="padding:5px!important;">
+                <video style="padding: 0!important;" id="vid" width="1200"  loop muted autoplay >
+                    <source src="{{ asset('images/video_socutu.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <script>
+                    document.getElementById('vid').play();
+                </script>
+                <!--iframe width="820" height="630"
+                        src="https://www.youtube.com/embed/f8bUpGR-AF4?autoplay=1">
+                </iframe-->
+            </div>
+
+        </div><!-- Container / -->
+        <div class="section-padding"></div>
+    </div><!-- Offer / -->
+
+    <!-- Why We Are Section -->
+    <div id="why-we-are-section" class="why-we-are-section container-fluid no-padding">
+        <!-- Features Block -->
+        <div class="features-block">
+            <div class="section-padding"></div>
+            <!-- Section Header -->
+            <div class="section-header">
+                <h3>Message De La Diréction Générale</h3>
+                <p style="text-align: justify;text-justify: inter-word;text-indent: 50px;">
+                    Nous souhaitons faire de ce site le reflet de la dynamique de notre société et du professionnalisme de ses équipes. Nous espérons que vous aurez autant de plaisir à le découvrir que nous avons eu à le bâtir.
+                    Aucune entreprise viable ne peut être statique, pourquoi la SOCOTU le serait-il?
+                    <br>
+                </p>
+                    <p style="text-align: justify;text-justify: inter-word;text-indent: 50px;">
+                    La SOCOTU se soucie de son approche de contact ; de coopération et de partenariat avec sa clientèle et ses correspondants actuels et potentiels. Il faut sans cesse s’adapter aux exigences de nos clients et nos partenaires ; épouser leur progression et comprendre les changements qui touchent notre environnement pour ajuster nos services à toute nouvelle donne.
+                    La SOCOTU a pour objectif de maintenir, voire accentuer la distance qui continue de la séparer à son avantage de la concurrence, de plus en plus vive. Ne dit-on pas que :
+                    << celui qui n’avance pas recule >> ?
+                    <br>
+                    </p>
+
+                <p style="text-align: justify;text-justify: inter-word;text-indent: 50px;">
+                    C’est ce contexte particulier à la SOCOTU qui oblige ses différentes directions et tout son personnel à se remettre constamment en cause pour continuer à assurer à leur clientèle et correspondants les meilleurs services.
+                    La qualité et le respect des engagements demeurent au cœur de nos interventions. Il y a lieu d’être intransigeant.
+                    Vous pouvez compter sur notre dévouement. Nous nous mettons à votre écoute et disposition pour vous servir.
+                </p>
+                <p style="position:absolute;right:131px">La Direction Générale </p>
+            </div><!-- Section Header /- -->
+            <!-- Features Content -->
+
+            <div class="section-padding"></div>
+        </div><!-- Features Block -->
+        <!-- Request Quote -->
+        <div class="request-quote">
+            <img style="position: absolute;left:90px;height:709px;" src="{{ asset('images/slider.jpg') }}" alt="commitment" />
+        </div><!-- Request Quote /- -->
+    </div><!-- Why We Are /- -->
+    <div class="blog-section container-fluid no-padding">
+        <div class="section-padding"></div>
+        <!-- Container -->
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header-1">
+                <h3>Actualités</h3>
+                <p> Les dernières actualités sur la SOCOTU.</p>
+            </div><!-- Section Header -->
+            <div class="col-md-6">
+                <div class="entry-cover">
+                    <a href="single-blog.html"><img src="images/blog/blog-1.png" alt="blog-1"/></a>
+                </div>
+                <div class="enetry-header">
+                    <div class="entry-title">
+                        <h3><a title="Blog Title" href="single-blog.html">best Transports hosts fifth Global Supplier Awards</a></h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="post-date">
+                            <a href="#">Dec 12 2015</a>
+                        </div>
+                        <div class="byline">
+                            <a href="#">By Admin</a>
+                        </div>
+                        <div class="post-comment">
+                            <a href="#">4 Comments</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-content">
+                    <p>Perspiciatis unde omnis iste natus error sit ametsan voluptatem accusantium dolore lauda ntiumol, totam rem aperiam  libero tempore cumuna[...]</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="blog-list">
+                    <div class="col-md-4">
+                        <div class="entry-cover">
+                            <a href="single-blog.html"><img src="images/blog/blog-2.png" alt="blog-2"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="blog-area">
+                            <div class="enetry-header">
+                                <div class="entry-title">
+                                    <h3><a title="Blog Title" href="single-blog.html">5 way to Send your Goods by ship</a></h3>
+                                </div>
+                                <div class="entry-meta">
+                                    <div class="post-date">
+                                        <a href="#">Dec 12 2015</a>
+                                    </div>
+                                    <div class="byline">
+                                        <a href="#">By Admin</a>
+                                    </div>
+                                    <div class="post-comment">
+                                        <a href="#">4 Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                <p>Perspiciatis unde omnis iste natus error sit ametsan voluptatem accusantium[...] </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-list">
+                    <div class="col-md-4">
+                        <div class="entry-cover">
+                            <a href="single-blog.html"><img src="images/blog/blog-3.png" alt="blog-3"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="blog-area">
+                            <div class="enetry-header">
+                                <div class="entry-title">
+                                    <h3><a title="Blog Title" href="single-blog.html">Transatlantic Healthcare Service</a></h3>
+                                </div>
+                                <div class="entry-meta">
+                                    <div class="post-date">
+                                        <a href="#">Dec 12 2015</a>
+                                    </div>
+                                    <div class="byline">
+                                        <a href="#">By Admin</a>
+                                    </div>
+                                    <div class="post-comment">
+                                        <a href="#">4 Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                <p>Perspiciatis unde omnis iste natus error sit ametsan voluptatem accusantium[...] </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-list">
+                    <div class="col-md-4">
+                        <div class="entry-cover">
+                            <a href="single-blog.html"><img src="images/blog/blog-4.png" alt="blog-4"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="blog-area">
+                            <div class="enetry-header">
+                                <div class="entry-title">
+                                    <h3><a title="Blog Title" href="single-blog.html">Wins Logistics Company of the Year - 2014</a></h3>
+                                </div>
+                                <div class="entry-meta">
+                                    <div class="post-date">
+                                        <a href="#">Dec 12 2015</a>
+                                    </div>
+                                    <div class="byline">
+                                        <a href="#">By Admin</a>
+                                    </div>
+                                    <div class="post-comment">
+                                        <a href="#">4 Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                <p>Perspiciatis unde omnis iste natus error sit ametsan voluptatem accusantium[...] </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="section-padding"></div>
+                <a href="#" class="">Voir plus</a>
+            </div>
+        </div><!-- Container / -->
+        <div class="section-padding"></div>
+    </div><!-- Blog Section / -->
+
+    <script>
+        document.getElementById('vid').play();
+    </script>
+{% endblock %}
+

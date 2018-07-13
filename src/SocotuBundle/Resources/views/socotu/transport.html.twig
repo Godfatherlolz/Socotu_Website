@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .parag{
+            text-align: justify;text-justify: inter-word;text-indent: 30px;
+        }
+        ul > li  {
+            text-align: left;
+            font-size:16px;
+            color:#999;
+        }
+    </style>
+    <div id="page-banner" class="page-banner services-banner container-fluid no-padding">
+        <div class="banner-content">
+            <h3>Logistique de Transport & Transport International</h3>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('home') }}">Acceuil</a></li>
+                <li><a href="{{ path('services') }}">Services</a></li>
+                <li><a href="{{ path('transport') }}">Transport</a></li>
+            </ol>
+        </div>
+    </div><!-- Banner Section /- -->
+    <div class="services container-fluid no-padding">
+        <!-- Container -->
+        <div class="section-padding"></div>
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header-1" style="padding-bottom: 150px;">
+                <h3>Logistique de Transport & Transport international</h3>
+                <div class="col-md-6">
+                    <p class="parag">
+                        La SOCOTU accorde un intérêt particulier au développement de cette activité par le volume des investissements pour le renforcement et le renouvellement continus de sa flotte de camions, tracteurs et engins de manutention ainsi que l'extension de ses capacités d'entreposage et de distribution avec une implantation dans toutes les zones portuaires et aéroportuaires, à proximité des centres industriels et commerciaux du pays.
+                        Avec l'appui de son réseau de correspondants et de la flotte mise à sa disposition, la logistique SOCOTU est opérationnelle à l'import comme à l'export en lots complets et en groupage avec des services réguliers. Pour des trafics spécifiques, la SOCOTU offre les solutions les mieux adaptées répondant aux exigences des délais, de la gestion des stocks et de la distribution. La SOCOTU propose aussi son service de transport en convoi exceptionnel en hors gabarit.
+
+                </div>
+                <div class="col-md-6">
+                    <img style="padding-bottom:10px;" src="{{ asset('images/slider3.jpg') }}" alt="slider-1"/>
+                </div>
+
+
+
+
+
+            </div><!-- Section Header -->
+
+        </div><!-- Services /- -->
+        <div class="section-padding"></div>
+
+    </div><!-- Services /- -->
+{% endblock %}
